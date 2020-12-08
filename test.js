@@ -1,7 +1,7 @@
 'use strict';
 
 // Tests wrapped in a module pattern
-(function() {
+(function(exports) {
   // The 'it' label function:
   function it(desc, callback) {
     try {
@@ -32,30 +32,7 @@
     }
   }
 
-  // note-model unit tests:
-  it('Creates a new note and stores text inside the note', function() {
-    let newNote = new Note('this is the note text');
-    expect(newNote.text).toEqual('this is the note text');
-  });
+  exports.it = it;
+  exports.expect = expect;
 
-  it('Can show the text stored inside the note', function() {
-    let newNote = new Note('this is the note text');
-    expect(newNote.returnText()).toEqual('this is the note text');
-  });
-  // note-list-model unit tests:
-  it('creates and stores an array of notes', function() {
-    let myArray = new NoteList();
-    myArray.addNote('test note');
-    expect(myArray).toBeAnArray();
-    expect(myArray.list[0]).toEqual('test note');
-  });
-
-  it('Displays all the notes stored in the array', function() {
-    let myArray = new NoteList();
-    myArray.addNote('Test note');
-    myArray.addNote('Another test note');
-    expect(myArray.list.length).toEqual(2)
-  });
-
-
-})();
+})(this);

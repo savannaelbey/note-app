@@ -1,34 +1,15 @@
-/*
 'use strict';
+// note-list-model unit tests:
+it('creates and stores an array of notes', function() {
+  let myArray = new NoteList();
+  myArray.addNote('test note');
+  expect(myArray).toBeAnArray();
+  expect(myArray.list[0]).toEqual('test note');
+});
 
-(function() {
-  function anInstanceOfClass() {
-    var myNoteList = new NoteList();
-
-    if (myNoteList instanceof NoteList) {
-      console.log('anInstanceOfClass test passed');
-    } else {
-      console.log('anInstanceOfClass test failed');
-    }
-  }
-    anInstanceOfClass();
-  })();
-
-
-  (function() {
-    function listContainsNotes() {
-      var myNoteList = new NoteList();
-      myNoteList.addNote('This is a test note');
-      myNoteList.addNote('Another test note');
-
-      if (myNoteList.getList().length == 2 && myNoteList.list[0] === 'This is a test note') {
-        console.log('listContainsNotes test passed');
-      } else {
-        console.log('listContainsNotes test failed');
-      }
-    }
-
-      listContainsNotes();
-    })();
-
-    */
+it('Displays all the notes stored in the array', function() {
+  let myArray = new NoteList();
+  myArray.addNote('Test note');
+  myArray.addNote('Another test note');
+  expect(myArray.list.length).toEqual(2);
+});
