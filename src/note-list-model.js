@@ -1,3 +1,5 @@
+'use strict';
+
 class NoteList {
   constructor() {
     this.list = [];
@@ -10,6 +12,5 @@ class NoteList {
   addNote(note) {
     this.list.push(note);
   }
-
 
 }

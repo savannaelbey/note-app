@@ -1,6 +1,7 @@
+/*
 'use strict';
 
-(function(exports) {
+(function() {
   function anInstanceOfClass() {
     var myNoteList = new NoteList();
 
@@ -10,12 +11,11 @@
       console.log('anInstanceOfClass test failed');
     }
   }
-    exports.anInstanceOfClass = anInstanceOfClass;
     anInstanceOfClass();
-  })(this);
+  })();
 
 
-  (function(exports) {
+  (function() {
     function listContainsNotes() {
       var myNoteList = new NoteList();
       myNoteList.addNote('This is a test note');
@@ -27,6 +27,8 @@
         console.log('listContainsNotes test failed');
       }
     }
-      exports.listContainsNotes = listContainsNotes;
+
       listContainsNotes();
-    })(this);
+    })();
+
+    */

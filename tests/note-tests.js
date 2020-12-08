@@ -1,3 +1,4 @@
+/*
 'use strict';
 
 (function(exports) {
@@ -27,3 +28,4 @@
   exports.returnNoteText = returnNoteText;
   returnNoteText();
 })(this);
+*/
