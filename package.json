@@ -1,0 +1,25 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "This is a frontend, single page web app developed without using a testing library. All unit tests written using vanilla Javascript.",
+  "main": "note-list-view.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savannaelbey/note-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/savannaelbey/note-app/issues"
+  },
+  "homepage": "https://github.com/savannaelbey/note-app#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
