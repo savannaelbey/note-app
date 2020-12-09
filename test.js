@@ -15,7 +15,7 @@
       console.error(error);
     }
   }
-  // The 'expect' label function:
+  // The 'expect' label function (returns a hash-like object with a toEqual and toBeAnArray keys):
   function expect(a) {
     return {
       toEqual: function(b) {

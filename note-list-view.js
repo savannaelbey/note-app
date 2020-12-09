@@ -1,7 +1,7 @@
 'use strict';
 
 class NoteListView {
-  constructor(noteList) {
+  constructor(noteList = new NoteList()) {
     this.noteList = noteList;
   }
 
